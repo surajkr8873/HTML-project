@@ -4,457 +4,200 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
-    background: white;
-    color: black;
+    background: #f7f9ff;
+    color: #172554;
 }
 
-/* nav bar */
+/* ============================ navbar ======================== */
 
 .navbar{
+    height: 60px;
     width: 100%;
-    height: 65px;
-
-    background: rgb(31, 77, 61);
-
-    display: flex;
+    background-color: rgb(114, 119, 104);
+    color: white;
     align-items: center;
     justify-content: space-between;
-
-    padding: 0 50px;
-    border-bottom: 1px solid aquamarine;
-}
-
-/* logo */
-
-.logo{
+    padding: 0 45px;
     display: flex;
-    font-size: 25px;
-    gap: 2px;
-    align-items: center;
-    color: rgb(225, 215, 228);
+    border-bottom: 1px solid white;
 }
 
-.logo span{
-    font-size: 50px;
+.three-line a{
+    font-size: 21px;
+    margin-right: 5px;
+}
+
+.three-line{
+    margin-left: -35px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.logo span {
+    font-size: 42px;
     margin-bottom: 10px;
 }
 
-.navbar nav{
+.logo b {
+    font-size: 15px;
+}
+
+.nav-in {
     display: flex;
     gap: 30px;
 }
 
-.navbar nav a{
-    text-decoration: none;
-    color: #f5f5f5;
-    font-size: 15px;
+.nav-in a{
+    color: rgb(235, 227, 227);
+    text-decoration: None;
 }
 
-.navbar nav a:hover{
-    color: rgb(116, 116, 213);
+.nav-in a:hover{
+    color: rgb(163, 163, 171);
 }
 
-/* login & sign up */
+.login-button a {
+    display: inline-block;
 
-.login-buttons{
-    display: flex;
-    align-items: center;
-    gap: 18px;
-}
-
-.login{
-    text-decoration: none;
-    color: white;
     background: #2563eb;
-    padding: 9px 16px;
-    border-radius: 5px;
-    font-size: 12px;
+    color: white;
+
+    text-decoration: none;
+
+    padding: 10px 18px;
+
+    border-radius: 6px;
+
+    font-size: 17px;
 }
 
-.content{
-    min-height: 260px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+/* ================= navbar complete ================= */
 
-    padding: 35px 60px;
+/* ================= main content ===================== */
 
-    background: linear-gradient(
-        100deg,
-        rgb(121, 228, 193)
-    );
-}
-
-#tommorow{
-    color: #2563eb;
-}
 
 .main-content{
-    width: 55%;
+    height: 641.5px;
+    width: 100%;
+    background-color: rgb(240, 233, 233);
+    color: black;
+    justify-content: space-between;
+    padding-top: 10px;
+    border-bottom: 1px solid;
 }
 
-.main--content h1{
-    font-size: 30px;
-    line-height: 1.15;
-
-    color: #172554;
-    margin-bottom: 12px;
+.main-content h1{
+    margin-left: 25px;
 }
 
-.main--content p{
-    width: 500px;
+.main-content p{
+    margin: 25px;
+}
 
-    color: #64748b;
+.get-started{
+    margin-left: 25px;
+}
 
-    font-size: 12px;
-
-    line-height: 1.6;
-
+.get-started a{
+    text-decoration: none;
+    display: inline-block;
+    background: #2563eb;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 6px;
+    font-size: 15px;
     margin-bottom: 20px;
 }
 
-/* content button */
-
-.content-button{
-    display: flex;
-    gap: 19px;
-}
-
-.start{
-    text-decoration: none;
-
-    padding: 10px 17px;
-
-    border-radius: 7px;
-    font-size: 14px;
-    margin-top: 25px;
-}
-
-.primary{
-    background: #2563eb;
-    color: white;
-}
-
-.secondary{
-    background: white;
-    color: #1e3a8a;
-    border: 1px solid #dbe4f0;
-}
-
-.student-image{
-    width: 30%;
-
-    display: flex;
-    justify-content: center;
-}
-
-.student-image img{
-    width: 230px;
-    height: 190px;
-}
-
-/* why Edupath */
-
-.why-edupath {
-    padding: 25px 45px;
-    background: white;
-}
-
-.section-heading h2 {
-    font-size: 18px;
-
-    color: #172554;
-
-    margin-bottom: 15px;
-}
-
-
-/* Features */
-
-.features {
-    display: grid;
-
-    grid-template-columns:
-        repeat(4, 1fr);
-
-    gap: 12px;
-}
-
-
-.feature-card {
-    min-height: 100px;
-    margin-top: 12px;
-
-    background: white;
-
-    border: 1px solid #e5eaf3;
-
-    border-radius: 7px;
-
-    padding: 12px;
-
-    text-align: center;
-
-    box-shadow:
-        0 2px 7px rgba(0, 0, 0, 0.03);
-}
-
-
-.feature-icon {
-    width: 30px;
-    height: 30px;
-
-    margin: 0 auto 8px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    background: #eff6ff;
-
-    border-radius: 7px;
-
-    font-size: 15px;
-}
-
-
-.feature-card h3 {
-    font-size: 20px;
-
-    color: #334155;
-
-    margin-bottom: 5px;
-}
-
-
-.feature-card p {
-    font-size: 15px;
-
-    color: #5d636d;
-
-    line-height: 1.4;
-}
-
-/* popular course */
-
-.courses-section {
-    padding: 25px 45px;
-
-    background: #f8faff;
-}
-
-
-.courses-heading {
-    display: flex;
-
-    align-items: center;
-
-    justify-content: space-between;
-
-    margin-bottom: 15px;
-}
-
-
-.courses-heading h2 {
-    font-size: 18px;
-}
-
-
-.courses-heading a {
+.get-started button{
+    background: transparent;
     color: #2563eb;
-
-    text-decoration: none;
-
-    font-size: 10px;
+    border: 2px solid #2563eb;
+    padding: 10px 18px;
+    border-radius: 6px;
+    font-size: 12px;
+    cursor: pointer;
+    margin-left: 12px;
 }
 
-
-/* Course cards */
-
-.courses {
-    display: grid;
-
-    grid-template-columns:
-        repeat(4, 1fr);
-
-    gap: 12px;
+.heading-content-line h1,
+.heading-content-line h2{
+    display: inline;
+    margin: 0;
+    padding: 0;
 }
 
-
-.course-card {
-    background: white;
-
-    border: 1px solid #e5eaf3;
-
-    border-radius: 7px;
-
-    padding: 12px;
-
-    min-height: 100px;
-
-    box-shadow:
-        0 2px 7px rgba(0, 0, 0, 0.03);
+.heading-content-line h2{
+    color: blue;
 }
 
+.heading-content-line span{
+    color: blue;
+}
 
-.course-icon {
-    width: 35px;
-    height: 35px;
+.heading-content-line{
+    margin-left: 25px;
+}
 
+.student-picture img{
+    height: 270px;
+    margin-left: 25px;
+}
+
+.student-picture{
     display: flex;
-
-    align-items: center;
-    justify-content: center;
-
-    border-radius: 7px;
-
-    margin-bottom: 10px;
-
-    font-size: 19px;
+    gap: 20px;
+    align-items: flex-start;
 }
 
-
-.python {
-    background: #fff7df;
+.why-edupath{
+    color: blue;
+    margin: 0 0 20px 0;
+    font-size: 40px;
 }
 
-.web {
-    background: #e8f5ff;
+.list{
+    margin-left: 45px;
 }
 
-.data {
-    background: #eef2ff;
+.list a{
+    text-decoration: none;
 }
 
-.ai {
-    background: #f1eaff;
-}
+/* ================== Main Content End ============= */
 
-
-.course-card h3 {
-    font-size: 11px;
-
-    color: black;
-
-    margin-bottom: 6px;
-}
-
-
-.course-card p {
-    font-size: 8px;
-
-    color: blueviolet;
-}
-
-
-/* ================= FOOTER ================= */
+/* ===================== Footer =================  */
 
 .footer {
-    min-height: 70px;
-
+    width: 100%;
+    min-height: 60px;
     background: #172033;
-
     color: white;
-
     display: flex;
-
     align-items: center;
-
     justify-content: space-between;
-
-    padding: 12px 45px;
+    padding: 0px 30px;
 }
 
-
-.footer-logo h2 {
-    font-size: 15px;
-
-    margin-bottom: 3px;
-}
-
-
-.footer-logo p {
-    font-size: 8px;
-
-    color: #94a3b8;
-}
-
-
-.footer-links {
+.social-link {
     display: flex;
-
     gap: 20px;
 }
 
-
-.footer-links a {
+.social-link a {
+    color: white;
     text-decoration: none;
-
-    color: #6e7379;
-
-    font-size: 9px;
 }
 
-
-.social {
-    display: flex;
-
-    gap: 10px;
-
-    color: #72777d;
-
-    font-size: 11px;
+.social-link i {
+    color: white;
+    font-size: 20px;
 }
-
-
-/* ================= RESPONSIVE ================= */
-
-@media (max-width: 700px) {
-
-    .navbar {
-        padding: 0 20px;
-    }
-
-    .navbar nav {
-        display: none;
-    }
-
-    .hero {
-        padding: 30px 25px;
-
-        flex-direction: column;
-    }
-
-    .hero-content {
-        width: 100%;
-    }
-
-    .hero-content p {
-        width: 100%;
-    }
-
-    .hero-image {
-        width: 100%;
-
-        margin-top: 20px;
-    }
-
-    .features {
-        grid-template-columns:
-            repeat(2, 1fr);
-    }
-
-    .courses {
-        grid-template-columns:
-            repeat(2, 1fr);
-    }
-
-    .footer {
-        padding: 15px 20px;
-    }
-}
-
 
 
