@@ -24,15 +24,6 @@ body {
     border-bottom: 1px solid white;
 }
 
-.three-line a{
-    font-size: 21px;
-    margin-right: 5px;
-}
-
-.three-line{
-    margin-left: -35px;
-}
-
 .logo {
     display: flex;
     align-items: center;
@@ -45,7 +36,12 @@ body {
 }
 
 .logo b {
-    font-size: 15px;
+    font-size: 25px;
+}
+
+.logo b span{
+    color: blue;
+    font-size: 25px;
 }
 
 .nav-in {
@@ -64,17 +60,16 @@ body {
 
 .login-button a {
     display: inline-block;
-
     background: #2563eb;
     color: white;
-
     text-decoration: none;
-
     padding: 10px 18px;
-
     border-radius: 6px;
-
     font-size: 17px;
+}
+
+.login-button a:hover{
+    color: #c3c4c7;
 }
 
 /* ================= navbar complete ================= */
@@ -115,15 +110,23 @@ body {
     margin-bottom: 20px;
 }
 
+.get-started a:hover{
+    color: rgb(163, 163, 171);
+}
+
 .get-started button{
     background: transparent;
-    color: #2563eb;
+    color: black;
     border: 2px solid #2563eb;
     padding: 10px 18px;
     border-radius: 6px;
     font-size: 12px;
     cursor: pointer;
     margin-left: 12px;
+}
+
+.get-started button:hover{
+    background: #2563eb;
 }
 
 .heading-content-line h1,
@@ -184,6 +187,16 @@ body {
     justify-content: space-between;
     padding: 0px 30px;
 }
+/* ========= center ========= */
+
+.contact-us a{
+    text-decoration: none;
+    color: white;
+}
+
+.contact-us a:hover{
+    color: #2563eb;
+}
 
 .social-link {
     display: flex;
@@ -198,6 +211,10 @@ body {
 .social-link i {
     color: white;
     font-size: 20px;
+}
+
+.social-link a:hover{
+    color: #2563eb;
 }
 
 

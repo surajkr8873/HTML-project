@@ -1,0 +1,299 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(240, 233, 233);
+    color: #172554;
+}
+
+.navbar{
+    height: 60px;
+    width: 100%;
+    background-color: rgb(114, 119, 104);
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 45px 0 45px;
+    display: flex;
+    border-bottom: 1px solid white;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.logo span {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.logo b {
+    font-size: 25px;
+}
+
+.logo b span{
+    color: blue;
+    font-size: 25px;
+}
+
+.nav-in {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-in a{
+    color: rgb(235, 227, 227);
+    text-decoration: None;
+}
+
+.nav-in a:hover{
+    color: rgb(163, 163, 171);
+}
+
+header-profile a {
+    display: inline-block;
+    background: #f5f6f7;
+    color: white;
+    text-decoration: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    font-size: 17px;
+}
+
+.header-profile a{
+    color: white;
+    font-size: 25px;
+    padding: 0 0 0 50px;
+}
+
+.header-profile a:hover{
+    color: #c3c4c7;
+}
+
+/* ================= navbar complete ================= */
+/* =================== main-content ====================== */
+
+#page-course{
+    padding: 12px 0 0 25px;
+}
+
+.course-catalog{
+    color: blue;
+    margin-bottom: 5px;
+}
+.first-paragraph{
+    color: black;
+}
+
+/* ============================ search box ================== */
+
+.search-course{
+    height: 42px;
+    background: rgb(223, 214, 214);
+    border: 1px solid #dce5f2;
+    margin-top: 18px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.search-course span{
+    color: black;
+    margin-left: 5px;
+}
+
+.search-course input{
+    color: black;
+    outline: none;
+    width: 100%;
+    font-size: 15px;
+    border: none;
+    background: rgb(223, 214, 214) ;
+}
+
+.catagories{
+    display: flex;
+    gap: 10px;
+    margin: 12px 0 0 0;
+}
+
+.catagory.all{
+    background: #2563eb;
+}
+
+.catagory.all:hover{
+    background: rgb(187, 187, 196);
+}
+
+.catagory{
+    border: 1px solid #e1e8f2;
+    padding: 7px 13px;
+    border-radius: 8.5px;
+    color: black;
+    cursor: pointer;
+}
+
+.catagory:hover{
+    background: #3a72eb;
+}
+
+/* =================== card ========================= */
+
+.course-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+    margin-top: 12px;
+    padding-right: 14px;
+}
+
+/* ================= card ============== */
+
+.course-card{
+    background: rgb(214, 208, 208);
+    border: 1px solid #e1e8f2;
+    border-radius: 10px;
+    padding: 14px;
+    max-height: 230px;
+    box-shadow: 0 2px 8px rgba(40, 70, 120, 0.05);
+}
+
+.course-icon{
+    font-size: 35px;
+    color: rgb(84, 82, 79);
+    display: flex;
+    border-radius: 8px;
+    align-items: center;
+    margin: 12px 0 7px 0;
+}
+
+.course-card h1{
+    color: black;
+    margin-bottom: 4px;
+}
+
+.course-card p{
+    color: rgb(108, 96, 96);
+}
+
+.course-btn{
+    width: 25%;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2563eb;
+    color: white;
+    margin: 20px 0 0 0;
+    cursor: pointer;
+}
+
+.course-btn:hover{
+    color: rgb(163, 163, 171);
+}
+
+.new-skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgb(240, 233, 233);
+}
+
+
+.new-skill h1 {
+    color: #172554;
+    margin-bottom: 6px;
+}
+
+.new-skill p {
+    font-size: 12px;
+    color: #64748b;
+    margin-bottom: 12px;
+}
+
+.new-skill button {
+    border: none;
+    background: #2563eb;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.new-skill button:hover{
+    color: rgb(163, 163, 171);
+}
+
+/* ========== this the list and about Edupath  =============*/
+
+.about-edupath-courses{
+    color: black;
+    margin: 20px;
+}
+
+.about-edupath-courses h1{
+    color: blue;
+}
+
+.about-edupath-courses p{
+    color: black;
+    margin: 7px 0 8px 0;
+}
+
+.about-edupath-courses ul{
+    margin: 8px 0 0 50px;
+}
+
+.about-edupath-courses ul li span{
+    color: blue;
+}
+
+
+/* ===================== Footer =================  */
+
+.footer {
+    width: 100%;
+    min-height: 60px;
+    background: #172033;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px;
+}
+/* ========= center ========= */
+
+.contact-us a{
+    text-decoration: none;
+    color: white;
+}
+
+.contact-us a:hover{
+    color: #2563eb;
+}
+
+.social-link {
+    display: flex;
+    gap: 20px;
+}
+
+.social-link a {
+    color: white;
+    text-decoration: none;
+}
+
+.social-link i {
+    color: white;
+    font-size: 20px;
+}
+
+.social-link a:hover{
+    color: #2563eb;
+}
