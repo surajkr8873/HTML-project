@@ -22,6 +22,7 @@ body {
     padding: 0 45px;
     display: flex;
     border-bottom: 1px solid white;
+    position: fixed;
 }
 
 .logo {
@@ -78,13 +79,14 @@ body {
 
 
 .main-content{
-    height: 641.5px;
+    height: 1000px;
     width: 100%;
     background-color: rgb(240, 233, 233);
     color: black;
     justify-content: space-between;
-    padding-top: 10px;
+    padding-top: 80px;
     border-bottom: 1px solid;
+    
 }
 
 .main-content h1{
